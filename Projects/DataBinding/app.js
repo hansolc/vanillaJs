@@ -1,3 +1,5 @@
+// ref: https://blog.jeremylikness.com/blog/client-side-javascript-databinding-without-a-framework/
+
 class Observable {
   constructor(value) {
     this._listeners = [];
