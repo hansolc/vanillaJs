@@ -1,11 +1,18 @@
 import "./index.css";
+import Component from "./core/Component.js";
 
-function component() {
-  const element = document.createElement("div");
+const $root = document.getElementById("root");
 
-  element.innerHTML = "Hello world";
+class Header extends Component {
+  constructor($target) {
+    super($target);
+  }
 
-  return element;
+  template() {
+    return `
+      <div>header</div>
+    `;
+  }
 }
 
-document.getElementById("root").appendChild(component());
+new Header($root);
