@@ -20,4 +20,10 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
+  resolve: {
+    alias: {
+      "@Components": path.resolve(__dirname, "./src/Components/"),
+      "@core": path.resolve(__dirname, "./src/core/"),
+    },
+  },
 };
